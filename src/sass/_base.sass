@@ -1,0 +1,145 @@
+/*Подключения шрифтов*/
+@import "_mixins/font-face"
++font-face("OpenSans", "../fonts/OpenSans-Regular/OpenSans-Regular")
++font-face("OpenSans", "../fonts/OpenSans-SemiBold/OpenSans-SemiBold", 600)
++font-face("OpenSans", "../fonts/OpenSans-Bold/OpenSans-Bold", bold)
+$default-font: "OpenSans", sans-serif
+
+/*Подключения библиотек*/
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+@import "../libs/slick/slick.scss"
+
+/*Главные*/
+body
+	min-width: 320px
+	position: relative
+	font-family: $default-font
+	overflow-x: hidden
+	font-size: 17px
+	line-height: 1.2
+	color: #333
+	li
+		list-style-type: none
+	a
+		text-decoration: none !important
+		&:hover
+			text-decoration: none !important
+	.button
+		border: none
+		cursor: pointer
+		text-transform: uppercase
+		width: 140px
+		height: 45px
+		border: 1px solid #009348
+		transition: 0.5s
+		&:hover
+			background: #0F974E !important
+			color: #fff !important
+    
+
+nav
+	background-color: #fff
+	position: fixed
+	z-index: 1000
+	width: 100%
+	height: 70px
+	.container, .row
+		height: 100%
+	.mnu-item
+		display: inline-block
+		padding: 15px
+		margin-top: 15px
+		transition: 0.5s
+		cursor: pointer
+		&:hover
+			background: #0F974E
+			a
+				color: #fff
+		&.active
+			background: #0F974E
+			a
+				color: #fff
+		a
+			color: #333
+			font-size: 14px
+			font-weight: 600
+	.toggle-mnu 
+		position: absolute
+		width: 28px
+		height: 28px
+		right: 50px
+		top: 25px
+		display: none
+		margin-top: 14px
+		span:after, span:before 
+			content: ""
+			position: absolute
+			left: 0
+			top: 9px
+		span:after
+			top: 18px
+		span 
+			position: relative
+			display: block
+		span, span:after, span:before
+			width: 100%
+			height: 2px
+			background-color: #5f6f91
+			transition: all 0.3s
+			backface-visibility: hidden
+			border-radius: 2px
+		&.on span 
+			background-color: transparent
+		&.on span:before 
+			transform: rotate(45deg) translate(-1px, 0px)
+		&.on span:after 
+			transform: rotate(-45deg) translate(6px, -7px)
+
+
+
+
+
+/*Одинокие=)*/
+header, section, .h1, .h2, .but_wrap, .img, .item
+	position: relative
+section
+	padding: 100px 0
+.wrap
+	width: 100%
+.item
+	padding: 0 !important
+
+
+.slider
+	position: relative
+	.slick-dots
+		display: none !important
+	.prev,.next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 5
+		cursor: pointer
+	.prev
+		left: -100px
+	.next
+		right: -100px
+
+/*Текст*/
+.title
+	font-size: 36px
+	text-align: center
+	display: block
+	width: 100%
+	margin-bottom: 60px
+.h1
+  font-size: 18px
+  font-weight: 700
+  margin-top: 20px
+.h2
+  font-size: 15px
+  color: #4F4F4F
+  padding: 0 50px
+  line-height: 28px
+		

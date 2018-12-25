@@ -1,0 +1,189 @@
+@import "_mixins/font-face"
++font-face("Roboto", "../fonts/Roboto-Regular/Roboto-Regular")
++font-face("Roboto", "../fonts/Roboto-Medium/Roboto-Medium", 500)
++font-face("Roboto", "../fonts/Roboto-Bold/Roboto-Bold", bold)
+$default-font: "Roboto", sans-serif
+$main: #0177ff
+
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap-grid.scss"
+@import "../libs/bootstrap/scss/dropdown.scss"
+@import "../libs/bootstrap/scss/forms.scss"
+@import "../libs/bootstrap/scss/input-group.scss"
+@import "../libs/slick/slick.scss"
+@import "../libs/slick/slick-theme.scss"
+
+body
+  min-width: 320px
+  position: relative
+  font-family: $default-font
+  overflow-x: hidden
+  font-size: 16px
+  line-height: 1.2
+  color: #435358
+  background-color: #fff
+
+
+header, section
+  position: relative
+li
+  list-style-type: none
+a
+  text-decoration: none !important
+  color: #435358
+  font-size: 15px
+  font-weight: 500 !important
+  &:hover
+    text-decoration: none !important
+    color: #0176ff
+    .svg
+      path
+        fill: #0176ff
+  &.active
+    color: #0176ff
+    .svg
+      path
+        fill: #0176ff
+button
+  cursor: pointer
+  border-radius: 16px
+  background-color: transparent
+section
+  padding: 68px 0
+input,button,textarea
+  outline: none !important
+  border: none !important
+nav
+  .container, .row
+    height: 100%
+.row
+  position: relative
+.item
+  padding: 0 !important
+
+
+.toggle-mnu 
+  position: absolute
+  width: 28px
+  height: 28px
+  right: 50px
+  top: 25px 
+  display: none
+  margin-top: 14px
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+  span:after
+    top: 18px
+  span 
+    position: relative
+    display: block
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #5f6f91
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  &.on span 
+    background-color: transparent
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+
+.h1
+  color: #2c383c
+  font-size: 32px
+  font-weight: bold
+  line-height: 36px
+  padding-bottom: 28px
+  b
+    color: #017cff
+.h2
+  line-height: 24px
+.hide
+  display: none
+  transition: 1s
+  .fade
+    display: block
+
+
+.button_cust
+  width: 171px
+  height: 52px
+  box-shadow: 0 9px 27px rgba(1, 119, 255, 0.34)
+  border-radius: 26px
+  background-color: transparent
+  font-size: 18px
+  font-weight: 500
+  color: #0177ff
+  border: 2px solid #0177ff !important
+  margin-top: 30px
+  margin-right: 30px
+  transition: .8s
+  &:hover
+    background-color: #0177ff
+    background-image: linear-gradient(to left, #0177ff 0%, #009ffd 100%)
+    color: #fff
+
+.href
+  color: $main
+  text-decoration: underline !important
+  font-weight: 500
+  position: absolute
+  bottom: -20px
+  right: -35px
+  cursor: pointer
+
+.allpage
+  padding-top: 30px
+
+.navigation
+  padding-top: 100px
+  a
+    color: #889397
+    .svg
+      width: 18px
+      margin-left: 13px
+      margin-right: 8px
+      path
+        fill: #889397
+  .active
+    color: #2c383c !important
+
+
+.slider
+  position: relative
+  width: 100%
+  .slick-dots
+    display: none !important
+  .prev,.next
+    position: absolute
+    top: -70px
+    right: 0
+    width: 30px
+    height: 30px
+    background-color: #0176ff
+    background-image: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+    z-index: 5
+    cursor: pointer
+    img
+      margin: 0 auto
+      display: block
+      margin-top: 10px
+  .prev
+    right: -10px !important
+    border-radius: 17px 0 0 17px
+  .next
+    right: -40px !important
+    border-radius: 0 17px 17px 0
+    &:before
+      content: ''
+      height: 22px
+      width: 1px
+      background-color: #f5f5f5
+      position: absolute
+      top: 4px
