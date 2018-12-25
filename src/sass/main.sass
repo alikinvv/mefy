@@ -1520,6 +1520,166 @@ nav
     justify-content: space-between
     padding: 0
 
+.all
+  .modal-dialog
+    max-width: 1070px
 
+  .modal-body    
+    padding: 22px 53px
+    position: relative
+
+    .choice
+      position: absolute
+      right: 69px
+      top: 26px
+      bottom: 39px
+      background: #fff
+      border-radius: 10px
+      width: 268px
+      box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+      padding: 15px 27px
+
+      &__controls
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-top: 1px solid #d0dcdf
+        padding: 16px 26px
+
+        .btn
+          font-size: 16px
+          padding: 11px 20px
+      
+      h3
+        margin-bottom: 17px
+
+      ul
+        padding: 0
+
+        li
+          display: flex
+          align-items: center
+          color: #435358
+          font-size: 16px
+          margin-bottom: 13px
+
+          svg
+            font-size: 5px
+            fill: #0179ff
+            margin-left: 6px
+            position: relative
+            top: 1px
+            cursor: pointer
+
+    .wrap
+      max-height: 592px
+      overflow: auto
+      position: relative
+
+    .letter
+      color: #2c383c
+      font-weight: 500
+      font-size: 20px
+      margin-bottom: 19px
+
+    .citys
+      & > div
+        width: 240px
+        display: inline-block
+
+      a
+        display: block
+        color: #435358
+        font-size: 16px
+        font-weight: normal !important
+        transition: all .2s ease-in-out
+        margin-bottom: 13px
+
+        &.active
+          color: #0281f8
+
+        &:hover
+          color: #0281f8
+
+  .modal-header
+    background: #ecf2fa
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 56px 0 18px
+    position: relative
+
+    button
+      position: absolute
+      right: 19px
+      top: 23px
+      color: transparent
+      background: url('../img/icon/close.svg') no-repeat center
+
+    .form-group
+      width: 100%
+      margin-top: 25px
+      padding: 0 53px
+      position: relative
+
+      svg
+        fill: #0e87f7
+        position: absolute
+        top: 11px
+        right: 71px
+        cursor: pointer
+
+    input
+      width: 100%
+      padding: 13px 21px
+      border-radius: 50px
+      border: 1px solid #d1d1d1 !important
+      color: #889295
+      font-size: 14px
+
+      &::placeholder
+        color: #889295
+        font-size: 14px
+
+    .letters
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      padding: 0 53px
+
+      a
+        color: #bdc4cd
+        font-size: 18px
+        position: relative
+        display: inline-block
+
+        span 
+          position: relative
+          top: 1px
+
+        &.active
+          color: #fff
+
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            width: 27px
+            height: 27px
+            background: #0281f8
+            border-radius: 50%
+            transform: translate(-50%, -50%)
+
+    h3
+      color: #2c383c
+      font-size: 20px
+      font-weight: 500
+      margin-bottom: 30px
   
 @import "media"
