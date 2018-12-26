@@ -221,19 +221,21 @@ $(function() {
 		$(this).addClass('active');
 	});
 
-	const ps = new PerfectScrollbar('.all .wrap', {
-		wheelPropagation: true,
-		minScrollbarLength: 20,
-		maxScrollbarLength: 31
-	});
-
-	for (var i = 1; i <= $('.scroll').length; i++) {
-		new PerfectScrollbar('.c' + i, {
+	if ($('.all .wrap').length > 0) {
+		const ps = new PerfectScrollbar('.all .wrap', {
 			wheelPropagation: true,
-			minScrollbarLength: 12,
-			maxScrollbarLength: 12
+			minScrollbarLength: 20,
+			maxScrollbarLength: 31
 		});
-	}
+
+		for (var i = 1; i <= $('.scroll').length; i++) {
+			new PerfectScrollbar('.c' + i, {
+				wheelPropagation: true,
+				minScrollbarLength: 12,
+				maxScrollbarLength: 12
+			});
+		}
+	}	
 
 	$('.ps__thumb-y').append('<span></span>');
 
@@ -255,6 +257,11 @@ $(function() {
 	$('body').on('click', '.checklist.active .close', function () {
 		$('.checklist').removeClass('active')
 		$('.checklist .btn').text('Развернуть')
+	});
+
+	$('body').on('click', '.qest', function () {
+		console.log('object')
+		$(this).toggleClass('active');
 	});
 
 });

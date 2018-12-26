@@ -2043,4 +2043,95 @@ nav
   right: 274px
   top: 35px
 
+.questions
+  padding-top: 40px
+  padding-bottom: 20px
+
+  h2
+    color: #2c383c
+    font-size: 32px
+    font-weight: bold
+    margin-bottom: 25px
+
+  .container
+    padding: 0
+
+  .aside
+    flex: 0 0 28.33333%
+    max-width: 28.33333%
+
+
+.questions-cat
+  background: #fff
+  border-radius: 30px
+  padding: 20px
+  box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+  padding: 28px 25px 4px
+  margin-left: 16px
+  border-radius: 14px
+  width: 100%
+
+  ul
+    padding: 0
+
+    li 
+      margin-bottom: 18px
+
+    a
+      color: #0179ff
+      font-size: 14px
+      font-weight: 500
+
+.qest
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: #fff
+  box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+  margin-bottom: 15px
+  color: #2c383c
+  padding: 21px 20px
+  border-radius: 10px
+  cursor: pointer
+  position: relative
+
+  img
+    transition: all .2s ease-in-out
+
+  &.active
+    img
+      transform: rotate(-180deg)
+
+    & + .answer
+      height: initial
+
+  p
+    margin: 0
+    font-size: 20px
+    font-weight: 500
+
+
+.answer  
+  background: #fff
+  box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  margin-top: -25px
+  height: 0
+  overflow: hidden
+  padding: 0
+  margin-bottom: 30px
+
+  .wrap
+    padding: 21px 20px
+
+  .flex
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+
+  p
+    font-size: 16px
+    color: #435358
+
 @import "media"
