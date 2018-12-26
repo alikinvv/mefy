@@ -19,9 +19,9 @@ nav
   .mnu-item
     display: inline-block
     padding: 15px
-    margin-top: 15px
     transition: 0.5s
     cursor: pointer
+    margin: 0
     .svg
       margin-right: 5px
   .custom_button
@@ -1934,16 +1934,17 @@ nav
 .checklist
   position: absolute
   right: 0
-  top: 1000px
+  top: 24px
   background: #fff
   padding: 10px 15px
   box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
   text-align: center
   border-radius: 7px
-  border-top-left-radius: 0
   z-index: 5
 
   &.active
+    border-top-left-radius: 0
+
     .content
       height: 663px
 
@@ -2082,6 +2083,9 @@ nav
       font-size: 14px
       font-weight: 500
 
+      &:hover
+        text-decoration: underline !important
+
 .qest
   display: flex
   justify-content: space-between
@@ -2117,7 +2121,7 @@ nav
   border-bottom-left-radius: 10px
   border-bottom-right-radius: 10px
   margin-top: -25px
-  height: 0
+  display: none
   overflow: hidden
   padding: 0
   margin-bottom: 30px
@@ -2133,5 +2137,9 @@ nav
   p
     font-size: 16px
     color: #435358
+
+.logo img
+  position: absolute
+  top: 6px
 
 @import "media"

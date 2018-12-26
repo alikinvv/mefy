@@ -260,8 +260,7 @@ $(function() {
 	});
 
 	$('body').on('click', '.qest', function () {
-		console.log('object')
-		$(this).toggleClass('active');
+		$(this).next().slideToggle();
 	});
 
 });
