@@ -273,4 +273,13 @@ $(function() {
 	$('.qest.active').next('.answer').css('display', 'block');
 
 
+	$('body').on('click', '.info-one .link:not(.active)', function () {
+		$('.info-one .link').removeClass('active');
+		$(this).addClass('active');
+
+	});	
+
+	$('body').on('click', '.info-one .link.active', function () {
+		$('.info-one .link').removeClass('active');
+	});	
 });

@@ -50,19 +50,53 @@
 					<div class="info-one">
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/phone.svg" class="left" alt="Alt"></div>
-							<a href="#">+7 926 877 55 37</a>
+							<div class="link">
+								<span>+7 926 877 55 37</span>
+								<div class="div req phone">
+									<p>+7 926 877 55 37</p>
+									<p>+7 926 877 55 37</p>
+									<p>+7 926 877 55 37</p>
+								</div>
+							</div>
 						</div>
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/map.svg" class="left" alt="Alt"></div>
-							<a href="#">Москва</a>
+							<div class="link">
+								<span>Москва</span>
+								<div class="div map">
+									<p>г. Москва ул. Иванова, 34 корп., 14 офис 23</p>
+									<a href="javasscript:void(0)">На карте</a>
+								</div>
+							</div>
 						</div>
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/time.svg" class="left" alt="Alt"></div>
-							Сегодня	<a href="#">с 9:00 до 18:00</a>
+							Сегодня	<div class="link">
+								<span>с 9:00 до 18:00</span>
+								<div class="div req time">
+									<p>Понедельник <span>9:00 - 18:00</span></p>
+									<p>Вторник <span>9:00 - 18:00</span></p>
+									<p class="active">Среда <span>9:00 - 18:00</span></p>
+									<p>Четверг <span>9:00 - 18:00</span></p>
+									<p>Пятница <span>9:00 - 18:00</span></p>
+									<p>Суббота <span>10:00 - 15:00</span></p>
+									<p>Воскресенье <span>Выходной</span></p>
+								</div>
+							</div>
 						</div>
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/dost.svg" class="left" alt="Alt"></div>
-							<a href="#">Способы доставки</a>
+							<div class="link">
+								<span>Способы доставки</span>
+								<div class="div">
+									<ul>
+										<li>Самовывоз</li>
+										<li>Доставка курьером</li>
+										<li>Доставка почтой</li>
+									</ul>
+									<a href="javasscript:void(0)" data-toggle="modal" data-target="#types">Подробнее о доставке</a>
+								</div>
+							</div>
 						</div>
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/mail.svg" class="left" alt="Alt"></div>
@@ -74,7 +108,18 @@
 						</div>
 						<div class="a">
 							<div class="wrap"><img src="img/icon/page/money.svg" class="left" alt="Alt"></div>
-							<a href="#">Реквизиты компании</a>
+							<div class="link">
+								<span>Реквизиты компании</span>
+								<div class="div req">
+									<p>Юридическое лицо <span>Ко энд фе</span></p>
+									<p>Банк <span>АО Ромашка</span></p>
+									<p>БИК банка <span>1245879</span></p>
+									<p>Номер счета в банке <span>1245789632</span></p>
+									<p>Название счета <span>основной</span></p>
+									<p>Валюта <span>рубль</span></p>
+									<p>Описание счета <span>описание счета</span></p>
+								</div>
+							</div>
 						</div>
 					</div>
 
@@ -163,7 +208,7 @@
 							
 						</div>
 					</div>
-					<button class="button-center">Показать больше</button>
+					<button class="button-center" data-toggle="modal" data-target="#stock">Показать больше</button>					
 				</div>
 
 				<div class="tovar">
@@ -171,9 +216,17 @@
 						<p class="title fadestatus">Товары </p>
 						
 					</div>
-					<div class="filter">
-						<div class="block item active"><img src="img/icon/small/block.svg" class="svg" alt="Alt"></div>
-						<div class="table item"><img src="img/icon/small/table.svg" class="svg" alt="Alt"></div>
+					<div class="filter__layout">
+						<div class="filter__icon active filter__grid">
+							<svg class="icon">
+								<use xlink:href="img/icon/symbol-defs.svg#icon-grid"></use>
+							</svg>
+						</div>
+						<div class="filter__icon filter__list">
+							<svg class="icon">
+								<use xlink:href="img/icon/symbol-defs.svg#icon-list"></use>
+							</svg>
+						</div>
 					</div>
 					<div class="kategory">
 						<a href="#">Кондитерские изделия</a>
@@ -184,127 +237,196 @@
 					<p class="t-title">Кондитерские изделия</p>
 
 					<div class="tovar-block block-tovar">
-						<div class="t-item">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<div class="info-wrap">
-									<p class="info">Кол-во на складе: <b>24</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
+						
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
 								</div>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/small/tab.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/like.svg" class="svg" alt="Alt"></div>
-									</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
 								</div>
 							</div>
-						</div>
-						<div class="t-item">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<div class="info-wrap">
-									<p class="info">Кол-во на складе: <b>24</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
 								</div>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
-								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
-									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
-									</div>
-								</div>
-							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/del.svg" class="svg" alt="Alt"></div>
-									</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
 								</div>
 							</div>
 						</div>
-						<div class="t-item">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<div class="info-wrap">
-									<p class="info">Кол-во на складе: <b>24</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
-									<p class="info">Сорт: <b>1</b></p>
+
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
 								</div>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/del.svg" class="svg" alt="Alt"></div>
-									</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
+								</div>
+							</div>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
+								</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
 								</div>
 							</div>
 						</div>
+
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
+								</div>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
+								</div>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
+									</div>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
+								</div>
+							</div>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
+								</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
 					</div>
-
-
-
+					<button class="button-center">Показать больше</button>
+					<a href="javascript:void(0)" class="btn btn-blue">Все категории товаров компании</a>
 				</div>
 
 				<div class="sotrudniki">
@@ -317,6 +439,7 @@
 							<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 							<p class="p1">Иван Петров</p>
 							<p class="p2">Менеджер по продажам</p>
+							<span class="product__version">4.0</span>
 							<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 							<div class="bottom">
 								<div class="left">
@@ -331,6 +454,7 @@
 							<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 							<p class="p1">Иван Петров</p>
 							<p class="p2">Менеджер по продажам</p>
+							<span class="product__version">4.0</span>
 							<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 							<div class="bottom">
 								<div class="left">
@@ -345,6 +469,7 @@
 							<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 							<p class="p1">Иван Петров</p>
 							<p class="p2">Менеджер по продажам</p>
+							<span class="product__version">4.0</span>
 							<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 							<div class="bottom">
 								<div class="left">
@@ -360,7 +485,7 @@
 				<button class="button-center">Показать больше</button>
 				
 
-				<div class="sotrudniki">
+				<div class="sotrudniki no-version">
 					<div class="fadewrap">
 						<p class="title fadestatus">Отзывы </p>
 					</div>
@@ -404,156 +529,341 @@
 						<p class="title fadestatus">Заявки</p>
 					</div>
 					<div class="zayavki-slider slider">
-						<div class="t-item ">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<p class="info">Кол-во на складе: <b>24</b></p>
-								<p class="info">Сорт: <b>1</b></p>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
+								</div>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/small/tab.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/like.svg" class="svg" alt="Alt"></div>
-									</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
 								</div>
 							</div>
-						</div>
-						<div class="t-item ">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<p class="info">Кол-во на складе: <b>24</b></p>
-								<p class="info">Сорт: <b>1</b></p>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
-									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
-									</div>
-								</div>
-							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-								<div class="right-block reg">
-										<div class="item"><img src="img/icon/small/tab.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/like.svg" class="svg" alt="Alt"></div>
-									</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
 								</div>
 							</div>
 						</div>
-						<div class="t-item ">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<p class="info">Кол-во на складе: <b>24</b></p>
-								<p class="info">Сорт: <b>1</b></p>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
+								</div>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
-									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/small/tab.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/like.svg" class="svg" alt="Alt"></div>
-									</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
+								</div>
+							</div>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
+								</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
 								</div>
 							</div>
 						</div>
-						<div class="t-item ">
-							<div class="number">№4658699</div>
-							<div class="img"><img src="img/tovar/1.png" alt="Alt"></div>
-							<div class="brand">ООО Ко энд Фе <div class="version">4.0</div></div>
-							<div class="center">
-								<div class="name">Драже M&Ms с арахисом <div class="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div></div>
-								<p class="info">Кол-во на складе: <b>24</b></p>
-								<p class="info">Сорт: <b>1</b></p>
-								<div class="bottom">
-									<p class="info prod">Производство: <img src="img/icon/flag.svg" alt="Alt" class="flag"></p>
-									<p class="info">Цвет: <hr class="red"><hr class="blue"><hr class="green"></p>
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
 								</div>
-								<div class="right bg">
-									<div class="right-block">
-										<p class="rinfo"><b>21.88 ₽/уп</b></p>
-										<p class="linfo"><b>486.23 ₽/кг</b></p>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
+								</div>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block border">
-										<p class="rinfo"><b>от 6400 уп</b></p>
-										<p class="linfo"><b>140 032 ₽</b></p>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="bottom bot">
-								<div class="right">
-									<div class="right-block border">
-										<button class="buttonn">Смотреть</button>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
+								</div>
+							</div>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
+								</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="product product-vertical">
+							<div class="product__top">
+								<span class="product__number">№4658699</span>
+								<a href="javascript:void(0)"><svg class="icon">
+										<use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+									</svg></a>
+							</div>
+							<div class="product__img">
+								<img src="img/tovar/smetana-full.jpg" alt="">
+							</div>
+							<div class="product__info">
+								<div class="product__companyWrap">
+									<span class="product__company">ООО Ко энд Фе</span>
+									<span class="product__version">4.0</span>
+								</div>
+								<p class="product__name"><strong>Сметана Простоквашино, стаста</strong></p>
+								<div class="product__features">
+									<span>Сорт: </span><span class="sort"><strong>1</strong></span>
+									<span>Рост: </span><span class="height"><strong>164</strong></span>
+									<span>Вес: </span><span class="weight"><strong>345г</strong></span>
+									<span>Материал: </span><span class="material"><strong>Хлопок</strong></span>
+								</div>
+								<div class="product__production">
+									<div>
+										<span>Пр-тво: </span>
+										<img src="img/flag.jpg" class="product__flag" alt="">
 									</div>
-									<div class="right-block reg">
-										<div class="item"><img src="img/icon/small/tab.svg" class="svg" alt="Alt"></div>
-										<div class="item"><img src="img/icon/small/like.svg" class="svg" alt="Alt"></div>
+									<div>
+										<span>Цвет: </span>
+										<div class="product__colors">
+											<span class="product__color red"></span>
+											<span class="product__color blue"></span>
+											<span class="product__color green"></span>
+										</div>
 									</div>
+								</div>
+							</div>
+							<div class="product__countWrap">
+								<div>
+									<p class="product__count"><strong>21.88</strong> ₽/уп</p>
+									<span>486.23 ₽/кг</span>
+								</div>
+								<div>
+									<p class="product__count">от <strong>6400</strong> уп</p>
+									<span>140 032 ₽</span>
+								</div>
+							</div>
+							<div class="product__controls">
+								<div>
+									<a class="btn btn-blue" href="javascript:void(0)">Смотреть</a>
+								</div>
+								<div>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+										</svg></a>
+									<a href="javascript:void(0)"><svg class="icon">
+											<use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+										</svg></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<button class="button-center">Показать больше</button>
-
-
-
-
-
 			</div>
 		</section>
 		
+
+<div class="types modal fade" id="types" tabindex="-1" role="dialog" aria-labelledby="types" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Виды доставки</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<table>
+						<tr>
+							<td>
+								<p><strong>Самовывоз</strong></p>
+								<p class="blue">Бесплатно</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Доставка курьером</strong></p>
+								<p class="blue">300 руб</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Доставка почтой</strong></p>
+								<p class="blue">По тарифам почты</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Зоны доставки</strong></p>
+							</td>
+							<td>г. Москва, Московская область, г.Санкт-петербург</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="stock modal fade" id="stock" tabindex="-1" role="dialog" aria-labelledby="stock" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2></h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="modal-bg" style="background-image: url(img/coffee.png)">
+						<a href="kavascript:void(0)" class="btn btn-blue">Акция</a>
+						<p>При покупке ящика кофе - второй в подарок</p>
+					</div>
+					<p>Главной ценностью компании являются сотрудники. Наш персонал нициативный, коммуникабельный, ответственный,
+					результативный, постоянно совершенствует свой профессиональный и личностный уровень. Сотрудники эффективно
+					взаимодействуют между собой, слаженно работают в команде и достигают поставленных целей вместе с компанией. Политика
+					компании направлена на постоянное развитие.</p>
+					<p>Мы совершенствуем свои выставочные залы, учетные системы, складское и производственное оборудование и предоставляемые
+					сервисы.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 <!-- END CONTENT  -->
 //= template/footer.html
