@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<head>
+	<!-- Basics -->
+	<meta charset="utf-8">    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=1400">   
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="#">
+	<!-- Meta Tags - Description for Search Engine purposes -->
+	<meta property="og:image" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- Website Title -->
+	<title>Main</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<!-- Include CSS -->
+	<link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="libs/perfect-scrollbar/css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="css/main.css?v=1">
+</head>
+
+<body>
+<!-- START CONTENT  -->
+
+<nav>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="logo align-self-center"><img src="img/icon/logo.svg" width="212" alt="Alt"></div>
+            <a href="#" class="toggle-mnu"><span></span></a>
+            <ul class="mnu align-self-center">
+                <li class="mnu-item"><a href="#" class="active">Поиск</a></li>
+                <li class="mnu-item"><a href="#">Заказы</a></li>
+                <li class="mnu-item"><a href="#">Отклики</a></li>
+                <li class="mnu-item"><a href="#">Сделки</a></li>
+                <li class="mnu-item"><a href="#">Расчет</a></li>
+                <li class="mnu-item"><a href="#">Вопросы и ответы</a></li>
+                <li class="mnu-item">
+                    <span class="img-wrap"><img src="img/icon/rev.png" class="foto" alt="Alt"></span>
+                    <span>Иван Горюнов</span>
+                    <span><img src="img/icon/small/arrow_bottom.svg" class="arrow"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="search">
+    <div class="container">
+        <div class="row">
+            <input type="text" class="search" placeholder="Введите название  продукта, который хотите купить или продать">
+            <a class="searchall" data-toggle="modal" data-target="#all" href="javascript:void(0)">Открыть все товары</a>
+            <div class="all_category">Все категории<img src="img/icon/small/arrow_bottom.svg"></div>
+            <button class="button">Искать</button>
+            <div class="area s-area row">
+                <div class="col-12 col-sm-6 col-md-3 item">
+                    <a href="#">Все категории</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                    <a href="#">Зелень, коренья</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 item">
+                    <a href="#">Все категории</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                    <a href="#">Зелень, коренья</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 item">
+                    <a href="#">Все категории</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                    <a href="#">Зелень, коренья</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 item">
+                    <a href="#">Все категории</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                    <a href="#">Зелень, коренья</a>
+                    <a href="#">Орехи, сухофрукты, мед</a>
+                    <a href="#">Бобовые</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="filter low">
+    <div class="container">
+        <div class="filter__top swiper-container row">
+
+            <div class="swiper-wrapper">
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="product" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Товар
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="product">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c1">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="region" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Регион
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="region">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="country" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Страна происхождения
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="country">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="delivery" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Поставка
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="delivery">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c4">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="seller" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Продавец
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="seller">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c5">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="info" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Характеристики
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="info">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c6">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="packing" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Пакинг
+                    </button>
+                    <div class="filter__dropdown dropdown-menu" aria-labelledby="packing">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c7">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="favorite" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Избранное
+                    </button>
+                    <div class="filter__dropdown dropdown-menu right" aria-labelledby="favorite">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c8">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="marks" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Метки
+                    </button>
+                    <div class="filter__dropdown dropdown-menu right" aria-labelledby="marks">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c9">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="filter__item swiper-slide dropdown">
+                    <button class="filter__btn dropdown-toggle" type="button" id="region" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Регион
+                    </button>
+                    <div class="filter__dropdown dropdown-menu right" aria-labelledby="region">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="city" placeholder="Город"><svg class="icon">
+                                    <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </div>
+                            <div class="filter__checkboxes scroll c10">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Москвоская область</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Санкт-Петербург</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Калуга</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Пемза</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">г. Москва</label>
+                                </div>
+                            </div>
+
+                            <div class="filter__bottom">
+                                <button type="submit" class="filter__sumbmit btn btn-blue">Применить</button>
+                                <button type="submit" class="filter__reset">Сбросить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__left swiper-button-next"></div>
+        <div class="filter__right swiper-button-prev"></div>
+
+        <div class="filter__bottom">
+            <nav class="filter__nav">
+                <span>Показать сначала:</span>
+                <a class="active" href="javascript:void(0)">По рейтингу</a>
+                <a href="javascript:void(0)">Сначала подешевле</a>
+                <a href="javascript:void(0)">Сначала подороже</a>
+                <a href="javascript:void(0)">Со скидками</a>
+            </nav>
+
+            <div class="filter__layout">
+                <div class="filter__icon filter__grid">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/symbol-defs.svg#icon-grid"></use>
+                    </svg>
+                </div>
+                <div class="filter__icon active filter__list">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/symbol-defs.svg#icon-list"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="sugestion">
+    <div class="container">
+        <div class="choice">
+            <div>
+                <p><strong>Выберите лучших поставщиков</strong> <br> Результатов: 2608</p>
+            </div>
+            <div>
+                <div class="choice__item active">Самый дешевый</div>
+                <div class="choice__item">Оптимальный</div>
+                <div class="choice__item">Сборный</div>
+            </div>
+        </div>
+
+        <div class="groups">
+            
+            <div class="group">
+                <div class="group__buy">
+                    <p><span class="min">9</span> из <span class="max">10</span> позиций</p>
+                    <a href="javascript:void(0)" class="btn btn-blue">Купить</a>
+                    <div>
+                        <span class="company">ООО Ко энд Фе</span>
+                        <span class="version">4.0</span>
+                    </div>
+                </div>
+                <div class="group__item">
+                    <p>Конечная <br> стоимость</p>
+                    <span class="price">25 000 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Время ближайшей <br> отгрузки</p>
+                    <span class="price">08.08.18</span>
+                </div>
+                <div class="group__item">
+                    <p>Стоимость <br> доставки</p>
+                    <span class="price">1 200 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Акции</p>
+                    <span class="price">-30%</span>
+                </div>
+                <div class="group__toggle">
+                    <span>Чек-лист</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+                        <path fill-rule="evenodd" d="M9.013,10.604 L0.414,2.301 C-0.133,1.773 -0.133,0.917 0.414,0.389 C0.961,-0.139 1.848,-0.139 2.395,0.389 L10.003,7.735 L17.612,0.389 C18.159,-0.139 19.046,-0.139 19.593,0.389 C20.140,0.917 20.140,1.774 19.593,2.301 L10.994,10.604 C10.720,10.868 10.362,10.999 10.003,10.999 C9.645,10.999 9.287,10.867 9.013,10.604 Z" />
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="group-list"></div>
+
+            <div class="group active">
+                <div class="group__buy">
+                    <p><span class="min">9</span> из <span class="max">10</span> позиций</p>
+                    <a href="javascript:void(0)" class="btn btn-blue">Купить</a>
+                    <div>
+                        <span class="company">ООО Ко энд Фе</span>
+                        <span class="version">4.0</span>
+                    </div>
+                </div>
+                <div class="group__item">
+                    <p>Конечная <br> стоимость</p>
+                    <span class="price">25 000 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Время ближайшей <br> отгрузки</p>
+                    <span class="price">08.08.18</span>
+                </div>
+                <div class="group__item">
+                    <p>Стоимость <br> доставки</p>
+                    <span class="price">1 200 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Акции</p>
+                    <span class="price">-30%</span>
+                </div>
+                <div class="group__toggle">
+                    <span>Чек-лист</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+                        <path fill-rule="evenodd" d="M9.013,10.604 L0.414,2.301 C-0.133,1.773 -0.133,0.917 0.414,0.389 C0.961,-0.139 1.848,-0.139 2.395,0.389 L10.003,7.735 L17.612,0.389 C18.159,-0.139 19.046,-0.139 19.593,0.389 C20.140,0.917 20.140,1.774 19.593,2.301 L10.994,10.604 C10.720,10.868 10.362,10.999 10.003,10.999 C9.645,10.999 9.287,10.867 9.013,10.604 Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="group-list">
+
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/mm.png" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Драже M&Ms с арахисом</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/snikers.png" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Батончик Snickers Super +1 115г, оччень длинное название оччень
+                                        длинное название оччень</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/twix.png" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Батончик Twix 50 г</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/broccoli.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Брокколи свежая</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/cherry.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Вишня свежая тепличная+ пример очень длиннго названия на всю длину
+                                        строки</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product product-horizontal">
+                    <div class="product__img">
+                        <img src="img/tovar/potato.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <div class="product__top">
+                            <span class="product__number">№4658699</span>
+                            <span class="product__company">ООО Ко энд Фе</span>
+                            <span class="product__version">4.0</span>
+                        </div>
+                        <div class="product__center">
+                            <div class="product__desc">
+                                <p class="product__name"><strong>Картофель мытый, сетка</strong></p>
+                                <div class="product__features">
+                                    <p>
+                                        <span>Кол-во на складе: </span>
+                                        <strong class="count">24</strong>
+                                    </p>
+                                    <p>
+                                        <span>Сорт: </span>
+                                        <strong class="sort">1</strong>
+                                    </p>
+                                    <p>
+                                        <span>Рост: </span>
+                                        <strong class="height">164</strong>
+                                    </p>
+                                    <p>
+                                        <span>Вес: </span>
+                                        <strong class="weight">345</strong>
+                                    </p>
+                                    <p>
+                                        <span>Материал: </span>
+                                        <strong class="material">хлопок</strong>
+                                    </p>
+                                    <p>
+                                        <span>Кратность: </span>
+                                        <strong class="crate">12</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product__countWrap">
+                                <div>
+                                    <p class="product__count"><strong>21.88</strong> ₽/уп</p>
+                                    <span>486.23 ₽/кг</span>
+                                </div>
+                                <div>
+                                    <p class="product__count">от <strong>6400</strong> уп</p>
+                                    <span>140 032 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__production">
+                                <span>Производство: </span>
+                                <img src="img/flag.jpg" class="product__flag" alt="">
+                                <span>Цвет: </span>
+                                <div class="product__colors">
+                                    <span class="product__color red"></span>
+                                    <span class="product__color blue"></span>
+                                    <span class="product__color green"></span>
+                                </div>
+                            </div>
+                            <div class="product__controls">
+                                <div>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-bookmark"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-heart"></use>
+                                        </svg></a>
+                                    <a href="javascript:void(0)"><svg class="icon">
+                                            <use xlink:href="img/icon/symbol-defs.svg#icon-dots"></use>
+                                        </svg></a>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+
+            </div>
+
+            <div class="group">
+                <div class="group__buy">
+                    <p><span class="min">9</span> из <span class="max">10</span> позиций</p>
+                    <a href="javascript:void(0)" class="btn btn-blue">Купить</a>
+                    <div>
+                        <span class="company">ООО Ко энд Фе</span>
+                        <span class="version">4.0</span>
+                    </div>
+                </div>
+                <div class="group__item">
+                    <p>Конечная <br> стоимость</p>
+                    <span class="price">25 000 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Время ближайшей <br> отгрузки</p>
+                    <span class="price">08.08.18</span>
+                </div>
+                <div class="group__item">
+                    <p>Стоимость <br> доставки</p>
+                    <span class="price">1 200 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Акции</p>
+                    <span class="price">-30%</span>
+                </div>
+                <div class="group__toggle">
+                    <span>Чек-лист</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+                        <path fill-rule="evenodd" d="M9.013,10.604 L0.414,2.301 C-0.133,1.773 -0.133,0.917 0.414,0.389 C0.961,-0.139 1.848,-0.139 2.395,0.389 L10.003,7.735 L17.612,0.389 C18.159,-0.139 19.046,-0.139 19.593,0.389 C20.140,0.917 20.140,1.774 19.593,2.301 L10.994,10.604 C10.720,10.868 10.362,10.999 10.003,10.999 C9.645,10.999 9.287,10.867 9.013,10.604 Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="group-list"></div>
+
+            <div class="group">
+                <div class="group__buy">
+                    <p><span class="min">9</span> из <span class="max">10</span> позиций</p>
+                    <a href="javascript:void(0)" class="btn btn-blue">Купить</a>
+                    <div>
+                        <span class="company">ООО Ко энд Фе</span>
+                        <span class="version">4.0</span>
+                    </div>
+                </div>
+                <div class="group__item">
+                    <p>Конечная <br> стоимость</p>
+                    <span class="price">25 000 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Время ближайшей <br> отгрузки</p>
+                    <span class="price">08.08.18</span>
+                </div>
+                <div class="group__item">
+                    <p>Стоимость <br> доставки</p>
+                    <span class="price">1 200 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Акции</p>
+                    <span class="price">-30%</span>
+                </div>
+                <div class="group__toggle">
+                    <span>Чек-лист</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+                        <path fill-rule="evenodd" d="M9.013,10.604 L0.414,2.301 C-0.133,1.773 -0.133,0.917 0.414,0.389 C0.961,-0.139 1.848,-0.139 2.395,0.389 L10.003,7.735 L17.612,0.389 C18.159,-0.139 19.046,-0.139 19.593,0.389 C20.140,0.917 20.140,1.774 19.593,2.301 L10.994,10.604 C10.720,10.868 10.362,10.999 10.003,10.999 C9.645,10.999 9.287,10.867 9.013,10.604 Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="group-list"></div>
+
+            <div class="group">
+                <div class="group__buy">
+                    <p><span class="min">9</span> из <span class="max">10</span> позиций</p>
+                    <a href="javascript:void(0)" class="btn btn-blue">Купить</a>
+                    <div>
+                        <span class="company">ООО Ко энд Фе</span>
+                        <span class="version">4.0</span>
+                    </div>
+                </div>
+                <div class="group__item">
+                    <p>Конечная <br> стоимость</p>
+                    <span class="price">25 000 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Время ближайшей <br> отгрузки</p>
+                    <span class="price">08.08.18</span>
+                </div>
+                <div class="group__item">
+                    <p>Стоимость <br> доставки</p>
+                    <span class="price">1 200 ₽</span>
+                </div>
+                <div class="group__item">
+                    <p>Акции</p>
+                    <span class="price">-30%</span>
+                </div>
+                <div class="group__toggle">
+                    <span>Чек-лист</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="11px">
+                        <path fill-rule="evenodd" d="M9.013,10.604 L0.414,2.301 C-0.133,1.773 -0.133,0.917 0.414,0.389 C0.961,-0.139 1.848,-0.139 2.395,0.389 L10.003,7.735 L17.612,0.389 C18.159,-0.139 19.046,-0.139 19.593,0.389 C20.140,0.917 20.140,1.774 19.593,2.301 L10.994,10.604 C10.720,10.868 10.362,10.999 10.003,10.999 C9.645,10.999 9.287,10.867 9.013,10.604 Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="group-list"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="all modal fade" id="all" tabindex="-1" role="dialog" aria-labelledby="all" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <h3>Каталог товаров</h3>
+                <div class="letters">
+                    <a href="javascript:void(0)"><span>А</span></a>
+                    <a href="javascript:void(0)" class="active"><span>Б</span></a>
+                    <a href="javascript:void(0)"><span>В</span></a>
+                    <a href="javascript:void(0)"><span>Г</span></a>
+                    <a href="javascript:void(0)"><span>Д</span></a>
+                    <a href="javascript:void(0)"><span>Е</span></a>
+                    <a href="javascript:void(0)"><span>Ё</span></a>
+                    <a href="javascript:void(0)"><span>Ж</span></a>
+                    <a href="javascript:void(0)"><span>З</span></a>
+                    <a href="javascript:void(0)"><span>И</span></a>
+                    <a href="javascript:void(0)"><span>Й</span></a>
+                    <a href="javascript:void(0)"><span>К</span></a>
+                    <a href="javascript:void(0)"><span>Л</span></a>
+                    <a href="javascript:void(0)"><span>М</span></a>
+                    <a href="javascript:void(0)"><span>Н</span></a>
+                    <a href="javascript:void(0)"><span>О</span></a>
+                    <a href="javascript:void(0)"><span>П</span></a>
+                    <a href="javascript:void(0)"><span>Р</span></a>
+                    <a href="javascript:void(0)"><span>С</span></a>
+                    <a href="javascript:void(0)"><span>Т</span></a>
+                    <a href="javascript:void(0)"><span>У</span></a>
+                    <a href="javascript:void(0)"><span>Ф</span></a>
+                    <a href="javascript:void(0)"><span>Х</span></a>
+                    <a href="javascript:void(0)"><span>Ц</span></a>
+                    <a href="javascript:void(0)"><span>Ч</span></a>
+                    <a href="javascript:void(0)"><span>Ш</span></a>
+                    <a href="javascript:void(0)"><span>Щ</span></a>
+                    <a href="javascript:void(0)"><span>Э</span></a>
+                    <a href="javascript:void(0)"><span>Ю</span></a>
+                    <a href="javascript:void(0)"><span>Я</span></a>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Поиск по продуктам" class="search">
+                    <svg class="icon">
+                        <use xlink:href="img/icon/symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="wrap">
+                    <div class="products-list">
+                        <div class="letter"><strong>Б</strong></div>
+                        <div class="citys">
+                            <div>
+                                <div><span>Бадьян</span></div>
+                                <div><span>Базилик</span></div>
+                                <div><span>Базилик сушеный</span></div>
+                                <div class="active">
+                                    <span>Баклажан
+
+                                        <div class="tooltip">
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="countfilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Кол-во на складе
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="countfilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="weightfilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Вес
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="weightfilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="sortfilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Сорт
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="sortfilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="cratefilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Кратность
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="cratefilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="heightfilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Рост
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="heightfilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="filter__item swiper-slide dropdown">
+                                                <button class="filter__btn dropdown-toggle" type="button" id="materialfilter"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Материал
+                                                </button>
+                                                <div class="filter__dropdown dropdown-menu" aria-labelledby="materialfilter">
+                                                    1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </span>
+                                </div>
+                                <div><span>Баклажан сушеный</span></div>
+                                <div><span>Банан</span></div>
+                                <div><span>Банан сушеный</span></div>
+                                <div><span>Баранки</span></div>
+                                <div><span>Барбарис</span></div>
+                            </div>
+                            <div>
+                                <div><span>Барбарис сушеный</span></div>
+                                <div><span>Батат</span></div>
+                                <div><span>Батончик</span></div>
+                                <div><span>Безалкогольное пиво</span></div>
+                                <div><span>Безалкогольные напитки</span></div>
+                                <div><span>Безе</span></div>
+                                <div><span>Белый гриб</span></div>
+                                <div><span>Блины</span></div>
+                                <div><span>Боб</span></div>
+                            </div>
+                            <div>
+                                <div><span>Бобовые</span></div>
+                                <div><span>Боровик</span></div>
+                                <div><span>Борожоа</span></div>
+                                <div><span>Боярышник</span></div>
+                                <div><span>Бразильский орех</span></div>
+                                <div><span>Брусника</span></div>
+                                <div><span>Бублик</span></div>
+                                <div><span>Буковый орех</span></div>
+                                <div><span>Булгур</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-list">
+                        <div class="letter"><strong>Б</strong></div>
+                        <div class="citys">
+                            <div>
+                                <div><span>Бадьян</span></div>
+                                <div><span>Базилик</span></div>
+                                <div><span>Базилик сушеный</span></div>
+                                <div><span>Баклажан</span></div>
+                                <div><span>Баклажан сушеный</span></div>
+                                <div><span>Банан</span></div>
+                                <div><span>Банан сушеный</span></div>
+                                <div><span>Баранки</span></div>
+                                <div><span>Барбарис</span></div>
+                            </div>
+                            <div>
+                                <div><span>Барбарис сушеный</span></div>
+                                <div><span>Батат</span></div>
+                                <div><span>Батончик</span></div>
+                                <div><span>Безалкогольное пиво</span></div>
+                                <div class="active"><span>Безалкогольные напитки</span></div>
+                                <div><span>Безе</span></div>
+                                <div><span>Белый гриб</span></div>
+                                <div><span>Блины</span></div>
+                                <div><span>Боб</span></div>
+                            </div>
+                            <div>
+                                <div><span>Бобовые</span></div>
+                                <div><span>Боровик</span></div>
+                                <div><span>Борожоа</span></div>
+                                <div><span>Боярышник</span></div>
+                                <div><span>Бразильский орех</span></div>
+                                <div><span>Брусника</span></div>
+                                <div><span>Бублик</span></div>
+                                <div><span>Буковый орех</span></div>
+                                <div><span>Булгур</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice">
+                    <h3>Выбранные продукты</h3>
+                    <ul>
+                        <li>
+                            <span>Безалкагольные напитки</span>
+                            <svg class="icon">
+                                <use xlink:href="img/icon/symbol-defs.svg#icon-remove"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Боярышник</span>
+                            <svg class="icon">
+                                <use xlink:href="img/icon/symbol-defs.svg#icon-remove"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Виноград</span>
+                            <svg class="icon">
+                                <use xlink:href="img/icon/symbol-defs.svg#icon-remove"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Вода</span>
+                            <svg class="icon">
+                                <use xlink:href="img/icon/symbol-defs.svg#icon-remove"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <span>Волнушка</span>
+                            <svg class="icon">
+                                <use xlink:href="img/icon/symbol-defs.svg#icon-remove"></use>
+                            </svg>
+                        </li>
+                    </ul>
+
+                    <div class="choice__controls">
+                        <a href="javascript:void(0)" class="btn btn-blue">Сохранить</a>
+                        <a href="javascript:void(0)" class="reset">Очистить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- END CONTENT  -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="item logo"><img src="img/icon/logo-white.svg" width="177" alt="Alt"></div>
+            <div class="item">
+                <a href="#">Поиск</a>
+                <a href="#">Заказы</a>
+                <a href="#">Отклики</a>
+            </div>
+            <div class="item">
+                <a href="#">Сделки</a>
+                <a href="#">Расчет</a>
+                <a href="#">Вопросы и ответы</a>
+            </div>
+            <div class="item">
+                <a href="#">О проекте</a>
+                <a href="#">Работа с сайтом</a>
+                <a href="#">Статьи</a>
+            </div>
+            <div class="item">
+                <a href="#">Лицензионный договор</a>
+                <a href="#">Агентский договор</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="item">
+                <a href="tel:+7 (495) 000-00-00" class="tel"><img src="img/icon/small/phone.svg">+7 (495) 000-00-00</a>
+                <a href="#" class="soc"><img src="img/icon/small/vk.svg"></a>
+                <a href="#" class="soc"><img src="img/icon/small/face.svg"></a>
+                <a href="#" class="soc"><img src="img/icon/small/insta.svg"></a>
+                <a href="#" class="soc"><img src="img/icon/small/tube.svg"></a>
+                <a href="#" class="soc"><img src="img/icon/small/telega.svg"></a>
+                <a href="#" class="soc"><img src="img/icon/small/twiter.svg"></a>
+            </div>
+
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="cop">©2018 Company, Все права защищены.  Использование материалов с сайта только с согласия правообладателей</div>
+</footer>
+
+
+<script src="js/scripts.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/swiper/js/swiper.min.js"></script>
+<script src="libs/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+<script src="js/common.js?v=1"></script>
+</body>
+</html>

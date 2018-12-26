@@ -932,6 +932,8 @@ nav
       font-size: 15px
   .logo
     margin-top: 15px
+    img
+      position: static
   .tel
     font-weight: 500
     font-size: 16px !important
@@ -1318,6 +1320,7 @@ nav
   box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
   padding: 9px
   margin-bottom: 19px
+  background: #fff
 
   &-vertical
     width: initial
@@ -1547,7 +1550,6 @@ nav
     border-radius: 20px
     font-size: 12px
     font-weight: bold
-    line-height: 1
     padding: 2px 9px
     margin-left: 14px
 
@@ -2139,4 +2141,188 @@ nav
   position: absolute
   top: 6px
 
+.sugestion
+  padding: 24px 0
+  position: relative
+
+  .groups
+    margin-top: 40px
+
+  .group
+    width: 100%
+    display: flex
+    box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+    border-radius: 10px
+    position: relative
+    background: #fff
+    margin-bottom: 30px
+
+    &.active
+      .group__toggle
+        background: #009ffd
+        background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
+
+        span
+          color: #fff
+
+        svg
+          fill: #fff
+
+    &__toggle
+      background: #ecf2fa
+      display: flex
+      position: relative
+      padding: 0 63px
+      border: 1px solid #d0dcdf !important
+      border-left: 0 !important
+      cursor: pointer
+      border-top-right-radius: 10px
+      border-bottom-right-radius: 10px
+
+      &:hover
+        background: #009ffd
+        background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
+
+        span
+          color: #fff
+
+        svg
+          fill: #fff
+
+      span
+        position: absolute
+        top: 55px
+        left: 23px
+        color: #2c383c
+        font-size: 18px
+        font-weight: bold
+
+      svg
+        position: absolute
+        bottom: 53px
+        left: 53px
+        fill: #2c383c
+        transform: scale(1.4)
+
+    &__item
+      border-right: 1px solid #d0dcdf
+      text-align: center
+      flex-grow: 1
+      padding-top: 38px
+      position: relative
+
+      p
+        font-size: 16px
+        color: #839195
+
+      span
+        font-size: 20px  
+        font-weight: bold
+        color: #2c383c
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+
+    &__buy
+      padding: 20px 43px
+      text-align: center
+      border-right: 1px solid #d0dcdf
+
+      p
+        color: #2c383c
+        font-weight: 500
+        margin-bottom: 14px
+
+      .btn
+        padding: 14px 66px
+        font-size: 16px
+
+      div
+        margin-top: 18px
+        text-align: left
+        display: flex
+        justify-content: space-between
+
+        .company
+          font-size: 16px
+          color: #0176fe
+
+        .version
+          background: #009ffd
+          background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
+          color: #fff
+          border-radius: 20px
+          font-size: 12px
+          font-weight: bold
+          padding: 2px 9px
+          margin-left: 14px
+
+  .choice
+    display: flex
+
+    &__item
+      width: 33.333333%
+      display: flex
+      justify-content: center
+      align-items: center
+      border-right: 1px solid #d0dcdf
+      cursor: pointer
+
+      &:first-child
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+
+      &:last-child
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+
+      &.active
+        background: #009ffd
+        background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7', GradientType=1 )
+        color: #fff
+
+      &:last-child
+        border: 0
+
+    p
+      margin: 0
+      line-height: 1.4
+      font-size: 15px
+
+      strong
+        font-size: 16px
+
+    & > div:first-child
+      width: 400px
+      display: flex
+      align-items: center
+      padding: 15px 0
+    
+    & > div:last-child
+      box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+      width: 100%
+      display: flex
+      font-size: 16px
+      font-weight: 500
+      color: #2d3e57
+      border-radius: 10px
+
+.group-list
+  background: #e8eaee
+  padding: 40px
+  margin-top: -49px
+  padding: 42px 28px 1px
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  margin-bottom: 30px
+  display: none
+
+
+
+  
 @import "media"

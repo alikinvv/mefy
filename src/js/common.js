@@ -260,7 +260,17 @@ $(function() {
 	});
 
 	$('body').on('click', '.qest', function () {
-		$(this).next().slideToggle();
+		$(this).next('.answer').slideToggle();
+		$(this).toggleClass('active');
 	});
+
+	$('body').on('click', '.group__toggle', function () {
+		$(this).closest('.group').next('.group-list').slideToggle();
+		$(this).closest('.group').toggleClass('active');
+	});
+
+	$('.group.active').next('.group-list').css('display', 'block');
+	$('.qest.active').next('.answer').css('display', 'block');
+
 
 });
