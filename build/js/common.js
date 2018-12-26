@@ -118,7 +118,7 @@ $(function() {
 	var swiper = new Swiper('.filter__top', {
 		slidesPerView: 'auto',
 		spaceBetween: 19.7,
-		freeMode: true,
+		simulateTouch: false,
 		navigation: {
 			nextEl: '.filter__left',
 			prevEl: '.filter__right',
@@ -214,6 +214,47 @@ $(function() {
 		activeEl = $(this);
 		$('.filter__nav a').removeClass('active');
 		activeEl.addClass('active');	
+	});
+
+	$('body').on('click', '.all .letters a', function () {
+		$('.all .letters a').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	const ps = new PerfectScrollbar('.all .wrap', {
+		wheelPropagation: true,
+		minScrollbarLength: 20,
+		maxScrollbarLength: 31
+	});
+
+	for (var i = 1; i <= $('.scroll').length; i++) {
+		new PerfectScrollbar('.c' + i, {
+			wheelPropagation: true,
+			minScrollbarLength: 12,
+			maxScrollbarLength: 12
+		});
+	}
+
+	$('.ps__thumb-y').append('<span></span>');
+
+	$('.filter').addClass('low')
+
+	$('.filter__item').on('shown.bs.dropdown', function () {
+		$('.filter').removeClass('low')
+	});
+
+	$('.filter__item').on('hide.bs.dropdown', function () {
+		$('.filter').addClass('low')
+	});
+
+	$('body').on('click', '.checklist:not(.active) .btn', function () {
+		$('.checklist').addClass('active')
+		$(this).text('Сформировать заказ')
+	});
+
+	$('body').on('click', '.checklist.active .close', function () {
+		$('.checklist').removeClass('active')
+		$('.checklist .btn').text('Развернуть')
 	});
 
 });

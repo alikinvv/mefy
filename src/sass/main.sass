@@ -959,17 +959,135 @@ nav
   margin-top: 159px
   background: #ecf2fa
   padding: 23px 0 7px
+  position: relative
+  z-index: 3
+
+  &.low
+    z-index: 0
+
+    .swiper-container
+      z-index: 0
 
   .container
     padding: 0 37px
     position: relative
 
   .swiper-container 
-    padding: 0 0 160px
-    margin-bottom: -160px
+    padding: 0 0 340px
+    margin-bottom: -340px
+    position: relative
+    z-index: 4
+
+  &__checkboxes
+    max-height: 175px
+    overflow: hidden
+    padding: 0 8px
+    position: relative
+
+    .ps__rail-y
+      right: 12px !important
+      width: 2px
+
+      .ps__thumb-y
+        width: 12px !important
+        height: 12px !important
+        border-radius: 50%
+
+        span
+          display: none
+
+    .form-check
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+
+    label
+      font-size: 14px
+      color: #435358
+
+    input
+      position: relative
+      width: 23px
+      height: 23px
+      margin-top: 0
+      margin-right: 16px
+      cursor: pointer
+
+      &:checked
+        &:before
+          background: url('../img/icon/check.svg') no-repeat center #fff
+
+      &::before
+        content: ''
+        position: absolute
+        width: 23px
+        height: 23px
+        left: 0
+        top: 0
+        background: #fff
+        border: 1px solid #d1d1d1
+        border-radius: 4px
+        pointer-events: none
   
   &__item 
     width: initial
+
+    .filter__dropdown
+      padding: 14px 0 7px
+      border-radius: 7px
+      border: 0
+      margin-top: 8px
+      width: 252px
+      box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+
+      .filter__bottom
+        margin: 0
+        padding: 10px 15px 2px
+
+      .btn
+        font-size: 18px
+        padding: 6px 18px
+      
+      .filter__reset
+        color: #017aff
+        font-size: 16px
+        text-decoration: underline !important
+
+        &:hover
+          text-decoration: none !important
+
+      &.right
+        left: initial !important
+        right: 0
+
+    form
+      .form-group
+        position: relative
+        padding: 0 8px
+
+        svg
+          position: absolute
+          top: 8px
+          right: 25px
+          fill: #0177ff
+
+      input 
+        border-radius: 50px
+        border: 1px solid #d1d1d1 !important
+        font-size: 14px
+        color: #889295
+        padding: 6px 13px
+        box-sizing: border-box
+
+        &:hover,
+        &:focus,
+        &:active
+          outline: none
+          box-shadow: none
+
+        &::placeholder
+          color: #889295
+          font-size: 14px
 
   &__btn 
     background: #fff
@@ -990,6 +1108,8 @@ nav
     margin-left: -24px
     margin-right: -37px
     padding: 28px 0 2px
+    position: relative
+    z-index: 2
 
   &__layout
     display: flex
@@ -1163,6 +1283,7 @@ nav
 
 .results
   padding: 24px 0
+  position: relative
 
   .container
     padding: 0
@@ -1184,6 +1305,7 @@ nav
     background: #009ffd
     background: linear-gradient(to right, #009ffd 0%, #0177ff 100%)
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0177ff', GradientType=1 )
+    box-shadow: 0px 5px 20px rgba(50, 73, 104, .19)
 
     &:hover
       color: #fff
@@ -1528,9 +1650,16 @@ nav
     padding: 22px 53px
     position: relative
 
+    .reset
+      text-decoration: underline !important
+      color: #0176fe
+
+      &:hover
+        text-decoration: none !important
+
     .choice
       position: absolute
-      right: 69px
+      right: 80px
       top: 26px
       bottom: 39px
       background: #fff
@@ -1552,7 +1681,7 @@ nav
 
         .btn
           font-size: 16px
-          padding: 11px 20px
+          padding: 11px 20px          
       
       h3
         margin-bottom: 17px
@@ -1591,19 +1720,61 @@ nav
         width: 240px
         display: inline-block
 
-      a
-        display: block
-        color: #435358
-        font-size: 16px
-        font-weight: normal !important
-        transition: all .2s ease-in-out
-        margin-bottom: 13px
+        div:not(.dropdown-menu)
+          display: block
+          color: #435358
+          font-size: 16px
+          font-weight: normal !important
+          transition: all .2s ease-in-out
+          margin-bottom: 13px
+          cursor: pointer
 
-        &.active
-          color: #0281f8
+          span
+            position: relative
 
-        &:hover
-          color: #0281f8
+          .tooltip
+            background: #fff
+            display: none
+            width: 258px
+
+            &::before
+              content: ''
+              position: absolute
+              left: -5px
+              top: 50%
+              transform: translateY(-50%) rotate(45deg)
+              width: 20px
+              height: 20px
+              background: #fff
+
+            button
+              background: #ecf2fa
+              font-size: 14px
+              margin-right: 5px
+
+              &:hover
+                color: #ecf2fa
+                background: #0176fe
+                
+          &.active
+            color: #0281f8
+            position: relative
+
+            .tooltip
+              display: flex
+              position: absolute
+              flex-wrap: wrap
+              justify-content: flex-start
+              right: -25px
+              top: 50%
+              transform: translateY(-50%) translateX(100%)
+              z-index: 1
+              box-shadow: 0 0 49px rgba(50, 73, 104, .19)
+              border-radius: 5px
+              padding: 10px 0 0 18px
+
+          &:hover
+            color: #0281f8
 
   .modal-header
     background: #ecf2fa
@@ -1658,6 +1829,18 @@ nav
         position: relative
         display: inline-block
 
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          width: 0
+          height: 0
+          background: #0281f8
+          border-radius: 50%
+          transform: translate(-50%, -50%)
+          transition: all .2s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+
         span 
           position: relative
           top: 1px
@@ -1666,15 +1849,8 @@ nav
           color: #fff
 
           &::before
-            content: ''
-            position: absolute
-            top: 50%
-            left: 50%
             width: 27px
             height: 27px
-            background: #0281f8
-            border-radius: 50%
-            transform: translate(-50%, -50%)
 
     h3
       color: #2c383c
@@ -1682,4 +1858,183 @@ nav
       font-weight: 500
       margin-bottom: 30px
   
+.ps__rail-y
+  width: 5px
+  background: #cdd4df !important
+  right: 5px !important
+  opacity: 1 !important
+  display: block
+  height: 100%
+
+  &:hover
+    background: #cdd4df !important
+
+    .ps__thumb-y
+      width: 15px
+      right: -5px
+
+.ps__thumb-y
+  width: 15px !important
+  right: -5px
+  background: #009ffd
+  background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
+  border-radius: 50px
+  height: 31px !important
+
+  span
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 7px
+    height: 7px
+    background: url('../img/icon/scrollbar.svg') no-repeat center
+    background-size: cover
+
+
+#category 
+  .catbut 
+    .item
+      position: relative
+
+      &:hover
+        background-color: transparent
+
+        p
+          transition-delay: 200ms
+
+        &::before
+          width: 100%
+          border-radius: 0
+
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 98px
+        height: 100%
+        border-radius: 0 50% 50% 0
+        background: #009ffd
+        background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
+        transition: all .6s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+
+      .svg-wrap
+        background-color: transparent
+
+        img 
+          position: relative
+
+        svg
+          position: relative
+
+.checklist
+  position: absolute
+  right: 0
+  top: 1000px
+  background: #fff
+  padding: 10px 15px
+  box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
+  text-align: center
+  border-radius: 7px
+  border-top-left-radius: 0
+
+  &.active
+    .content
+      height: 663px
+
+    .close
+      transform: translateX(-100%)
+      opacity: 1
+
+  .close
+    position: absolute
+    left: 0
+    top: 0
+    transform: 0
+    background: url('../img/icon/minus.svg') no-repeat center #0177ff
+    width: 50px
+    height: 50px
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+    cursor: pointer
+    transition: all .2s ease-in-out
+    opacity: 0
+
+  .content
+    height: 0
+    overflow: hidden
+    transition: all .2s ease-in-out
+
+  .item
+    width: 243px
+    border-radius: 10px
+    border: 1px solid #cdd4df
+    padding: 6px 15px !important
+    margin-bottom: 23px
+
+    &__bottom
+      display: flex
+      align-items: center
+
+    .color
+      width: 12px
+      height: 12px
+      display: inline-block
+      background: #000
+      border-radius: 50%
+      margin-left: 10px
+
+      &-green
+        background: #00ff24
+
+    &__desc
+      & > div
+        text-align: left
+        margin-bottom: 7px
+        font-size: 14px
+
+        input
+          display: inline
+          width: 65px
+          border-radius: 50px
+          border: 1px solid #cdd4df !important
+          text-align: center
+          font-size: 15px
+
+        span
+          font-weight: 500
+
+    &__name
+      font-size: 16px
+      font-weight: 500
+      color: #2c383c
+
+    &__top
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 10px
+
+      p
+        margin: 0
+
+      img
+        max-height: 50px
+
+  &__title
+    color: #2c383c
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 5px
+
+  .btn
+    font-size: 15px
+    padding: 10px 17px
+    position: static
+    transform: none
+
+
 @import "media"
