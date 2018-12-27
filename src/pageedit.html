@@ -46,42 +46,80 @@
 		<div class="col-12 col-sm-4 item-wrap aside">
 			<div class="item">
 				<div class="img"><img src="img/icon/coffee.svg" alt="Alt"></div>
-				<button class="button">Редактировать профиль</button>
+				<button data-toggle="modal" data-target="#req" class="button">Редактировать профиль</button>
 				<div class="info-one">
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/phone.svg" class="left" alt="Alt"></div>
-						<a href="#">+7 926 877 55 37</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
+						<div class="link">
+							<span>+7 926 877 55 37</span>
+							<div class="div req phone">
+								<p>+7 926 877 55 37</p>
+								<p>+7 926 877 55 37</p>
+								<p>+7 926 877 55 37</p>
+							</div>
+						</div>
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/map.svg" class="left" alt="Alt"></div>
-						<a href="#">Москва</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
+						<div class="link">
+							<span>Москва</span>
+							<div class="div map">
+								<p>г. Москва ул. Иванова, 34 корп., 14 офис 23</p>
+								<a href="javasscript:void(0)">На карте</a>
+							</div>
+						</div>
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/time.svg" class="left" alt="Alt"></div>
-						Сегодня	<a href="#">с 9:00 до 18:00</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
+						Сегодня <div class="link">
+							<span>с 9:00 до 18:00</span>
+							<div class="div req time">
+								<p>Понедельник <span>9:00 - 18:00</span></p>
+								<p>Вторник <span>9:00 - 18:00</span></p>
+								<p class="active">Среда <span>9:00 - 18:00</span></p>
+								<p>Четверг <span>9:00 - 18:00</span></p>
+								<p>Пятница <span>9:00 - 18:00</span></p>
+								<p>Суббота <span>10:00 - 15:00</span></p>
+								<p>Воскресенье <span>Выходной</span></p>
+							</div>
+						</div>
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/dost.svg" class="left" alt="Alt"></div>
-						<a href="#">Способы доставки</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
+						<div class="link">
+							<span>Способы доставки</span>
+							<div class="div">
+								<ul>
+									<li>Самовывоз</li>
+									<li>Доставка курьером</li>
+									<li>Доставка почтой</li>
+								</ul>
+								<a href="javasscript:void(0)" data-toggle="modal" data-target="#types">Подробнее о доставке</a>
+							</div>
+						</div>
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/mail.svg" class="left" alt="Alt"></div>
 						<a href="#">test@coandfe.com</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/site.svg" class="left" alt="Alt"></div>
 						<a href="#">coandfe.ru</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
 					</div>
 					<div class="a">
 						<div class="wrap"><img src="img/icon/page/money.svg" class="left" alt="Alt"></div>
-						<a href="#">Реквизиты компании</a>
-						<img src="img/icon/page/pen.svg" class="pen" alt="Alt">
+						<div class="link">
+							<span>Реквизиты компании</span>
+							<div class="div req">
+								<p>Юридическое лицо <span>Ко энд фе</span></p>
+								<p>Банк <span>АО Ромашка</span></p>
+								<p>БИК банка <span>1245879</span></p>
+								<p>Номер счета в банке <span>1245789632</span></p>
+								<p>Название счета <span>основной</span></p>
+								<p>Валюта <span>рубль</span></p>
+								<p>Описание счета <span>описание счета</span></p>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -124,7 +162,7 @@
 
 			<div class="info">
 				<div class="fadewrap">
-					<p class="title fadestatus">О компании <span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">О компании <span data-toggle="modal" data-target="#addproduct" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<p class="h2">
@@ -136,7 +174,7 @@
 
 			<div class="akcii">
 				<div class="fadewrap">
-					<p class="title fadestatus">Акции <span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">Акции <span data-toggle="modal" data-target="#adduser" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<div class="akcii-slider slider">
@@ -165,12 +203,12 @@
 						<span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span>
 					</div>
 				</div>
-				<button class="button-center">Показать больше</button>
+				<button data-toggle="modal" data-target="#view" class="button-center">Показать больше</button>
 			</div>
 
 			<div class="tovar">
 				<div class="fadewrap">
-					<p class="title fadestatus">Товары <span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">Товары <span data-toggle="modal" data-target="#time" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<div class="filter">
@@ -349,7 +387,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="button-center">Показать больше</button>
+					<button class="button-center" data-toggle="modal" data-target="#addstock">Показать больше</button>
 				</div>
 
 
@@ -706,6 +744,7 @@
 						<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 						<p class="p1">Иван Петров</p>
 						<p class="p2">Менеджер по продажам</p>
+						<span class="product__version">4.0</span>
 						<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 						<div class="bottom">
 							<div class="left">
@@ -720,6 +759,7 @@
 						<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 						<p class="p1">Иван Петров</p>
 						<p class="p2">Менеджер по продажам</p>
+						<span class="product__version">4.0</span>
 						<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 						<div class="bottom">
 							<div class="left">
@@ -734,6 +774,7 @@
 						<div class="img"><img src="img/icon/rev.png" alt="Alt"></div>
 						<p class="p1">Иван Петров</p>
 						<p class="p2">Менеджер по продажам</p>
+						<span class="product__version">4.0</span>
 						<div class="text">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div>
 						<div class="bottom">
 							<div class="left">
@@ -749,7 +790,7 @@
 			<button class="button-center">Показать больше</button>
 			
 
-			<div class="sotrudniki">
+			<div class="sotrudniki no-version">
 				<div class="fadewrap">
 					<p class="title fadestatus">Отзывы </p>
 				</div>
@@ -760,7 +801,7 @@
 						<p class="p2">Менеджер по продажам</p>
 						<div class="text">Падение цен на птицу связано с отголосками "куриного кризиса", случившегося в 2017 году. В этом году ожидается перепроизводство курицы. Падение цен на птицу связано с отголосками "куриного кризиса"... который случился в 2017 году.<div class="hide">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div></div>
 						<div class="bottom">
-							<div class="left"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
+							<div class="left" style="top: 2px"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
 							<div class="right"><a href="#" class="rev-show">Читать полностью</a></div>
 						</div>
 					</div>
@@ -770,7 +811,7 @@
 						<p class="p2">Менеджер по продажам</p>
 						<div class="text">Падение цен на птицу связано с отголосками "куриного кризиса", случившегося в 2017 году. В этом году ожидается перепроизводство курицы. Падение цен на птицу связано с отголосками "куриного кризиса"... который случился в 2017 году.<div class="hide">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div></div>
 						<div class="bottom">
-							<div class="left"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
+							<div class="left" style="top: 2px"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
 							<div class="right"><a href="#" class="rev-show">Читать полностью</a></div>
 						</div>
 					</div>
@@ -780,7 +821,7 @@
 						<p class="p2">Менеджер по продажам</p>
 						<div class="text">Падение цен на птицу связано с отголосками "куриного кризиса", случившегося в 2017 году. В этом году ожидается перепроизводство курицы. Падение цен на птицу связано с отголосками "куриного кризиса"... который случился в 2017 году.<div class="hide">Лучший сотрудник года, самый классный менеджер в коллективе, душа компании.</div></div>
 						<div class="bottom">
-							<div class="left"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
+							<div class="left" style="top: 2px"><img src="img/icon/small/arrow-left.svg" class="svg arrow" alt="Alt"><a href="#">Ответить</a></div>
 							<div class="right"><a href="#" class="rev-show">Читать полностью</a></div>
 						</div>
 					</div>
@@ -819,7 +860,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button class="buttonn">Смотреть</button>
+									<button style="left: -27px" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -854,7 +895,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button class="buttonn">Смотреть</button>
+									<button style="left: -27px" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -889,7 +930,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button class="buttonn">Смотреть</button>
+									<button style="left: -27px" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -924,7 +965,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button class="buttonn">Смотреть</button>
+									<button style="left: -27px" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -940,6 +981,456 @@
 		</div>
 	</div>
 </section>
+
+<div class="addproduct modal fade" id="addproduct" tabindex="-1" role="dialog" aria-labelledby="addproduct" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить товар</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<div class="add-photo">
+								<img src="img/icon/add.svg" alt="">
+								<span>Добавить фото</span>
+							</div>
+						</div>
+						<div class="v-col">
+							<div class="form-group">
+								<input type="text" placeholder="Наименование товара">
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Категория товара">
+								<img src="img/icon/toggle.svg" alt="">
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Страна производителя">
+								<img src="img/icon/toggle.svg" alt="">
+							</div>
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Сорт">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Высота">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Кол-во в упаковке">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Цена за единицу">
+									</div>
+								</div>
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Цвет">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Вес">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Регионы доставки">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Минимальный опт">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="v-col">
+							<a href="javascript:void(0)">+ <span>Добавить товар</span></a>
+						</div>
+						<div class="v-col">
+
+						</div>
+					</div>
+					<button class="btn btn-blue">Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="addproduct modal fade" id="adduser" tabindex="-1" role="dialog" aria-labelledby="adduser" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить сотрудника</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<div class="add-photo">
+								<img src="img/icon/add.svg" alt="">
+								<span>Добавить фото</span>
+							</div>
+						</div>
+						<div class="v-col">
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="ФИО сотрудника">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Должность">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Email">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea placeholder="Информация о сотруднике"></textarea>
+							</div>							
+						</div>
+					</div>
+					<div class="row">
+						<div class="v-col">
+							<div class="add-photo">
+								<img src="img/icon/add.svg" alt="">
+								<span>Добавить фото</span>
+							</div>
+						</div>
+						<div class="v-col">
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="ФИО сотрудника">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Должность">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Email">
+									</div>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<textarea placeholder="Информация о сотруднике"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="v-col">
+							<a href="javascript:void(0)">+ <span>Добавить сотрудника</span></a>
+						</div>
+						<div class="v-col">
+
+						</div>
+					</div>
+					<button class="btn btn-blue">Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="addproduct time modal fade" id="time" tabindex="-1" role="dialog" aria-labelledby="time" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить время работы</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<p><strong>Понедельник</strong></p>
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Начало работы">
+										<img src="img/icon/clock.svg" alt="">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Начало перерыва">
+										<img src="img/icon/clock.svg" alt="">
+									</div>
+								</div>
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Окончание работы">
+										<img src="img/icon/clock.svg" alt="">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Конец перерыва">
+										<img src="img/icon/clock.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="filter__checkboxes">
+								<div class="form-check">
+									<input type="checkbox" checked class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">Одинаковый режим работы для всех рабочих дней</label>
+								</div>
+							</div>							
+							<a href="javascript:void(0)">+ <span>Добавить день недели</span></a>
+							<div class="form-group">
+								<input type="text" placeholder="Выходной">
+								<img src="img/icon/toggle.svg" alt="">
+							</div>
+							<a href="javascript:void(0)">+ <span>Добавить выходной</span></a>
+						</div>				
+					</div>				
+				</div>
+				<button class="btn btn-blue">Сохранить</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="types modal fade" id="types" tabindex="-1" role="dialog" aria-labelledby="types" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Виды доставки</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<table>
+						<tr>
+							<td>
+								<p><strong>Самовывоз</strong></p>
+								<p class="blue">Бесплатно</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Доставка курьером</strong></p>
+								<p class="blue">300 руб</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Доставка почтой</strong></p>
+								<p class="blue">По тарифам почты</p>
+							</td>
+							<td>
+								Информационный текст о доставке. Главной ценностью компании являются сотрудники. Наш персонал нициативный,
+								коммуникабельный, ответственный, результативный, постоянно совершенствует профессиональный и личностный
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p><strong>Зоны доставки</strong></p>
+							</td>
+							<td>г. Москва, Московская область, г.Санкт-петербург</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="stock modal fade" id="stock" tabindex="-1" role="dialog" aria-labelledby="stock" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2></h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="modal-bg" style="background-image: url(img/coffee.png)">
+						<a href="kavascript:void(0)" class="btn btn-blue">Акция</a>
+						<p>При покупке ящика кофе - второй в подарок</p>
+					</div>
+					<p>Главной ценностью компании являются сотрудники. Наш персонал нициативный, коммуникабельный, ответственный,
+						результативный, постоянно совершенствует свой профессиональный и личностный уровень. Сотрудники эффективно
+						взаимодействуют между собой, слаженно работают в команде и достигают поставленных целей вместе с компанией.
+						Политика
+						компании направлена на постоянное развитие.</p>
+					<p>Мы совершенствуем свои выставочные залы, учетные системы, складское и производственное оборудование и
+						предоставляемые
+						сервисы.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="addproduct view modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="view" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить виды доставки</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Виды доставки">
+										<img src="img/icon/toggle.svg" alt="">
+									</div>
+								</div>
+								<div class="column">
+									<div class="form-group">
+										<input type="text" placeholder="Цена доставки">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea placeholder="Условия доставки"></textarea>
+							</div>
+
+							<a href="javascript:void(0)">+ <span>Добавить вид доставки</span></a>
+
+							<div class="form-group">
+								<input type="text" placeholder="Зоны доставки">
+							</div>
+
+							<div class="form-group">
+								<textarea placeholder="Дополнительная информация"></textarea>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-blue">Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="addproduct view req modal fade" id="req" tabindex="-1" role="dialog" aria-labelledby="req" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить виды доставки</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<div class="form-group">
+								<input placeholder="Юридическое лицо">
+							</div>
+
+							<div class="form-group">
+								<input placeholder="Банк">
+							</div>
+
+							<div class="form-group">
+								<input placeholder="БИК банка">
+							</div>
+
+							<div class="form-group">
+								<input placeholder="Номер счёта в банке">
+							</div>
+
+							<div class="form-group">
+								<input placeholder="Название счёта">
+							</div>
+
+							<div class="form-group">
+								<input type="text" placeholder="Зоны доставки">
+							</div>
+
+							<div class="row">
+								<div class="column">
+									<div class="form-group">
+										<input placeholder="Валюта">
+										<img src="img/icon/toggle.svg" alt="">
+									</div>
+								</div>
+								<div class="column">
+									
+								</div>
+							</div>
+
+							<div class="form-group">
+								<textarea placeholder="Описание счета"></textarea>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-blue">Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="addproduct addstock modal fade" id="addstock" tabindex="-1" role="dialog" aria-labelledby="addstock" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h2>Добавить акцию</h2>
+			</div>
+			<div class="modal-body">
+				<div class="wrap">
+					<div class="row">
+						<div class="v-col">
+							<div class="add-photo">
+								<img src="img/icon/add.svg" alt="">
+								<span>Добавить фото акции</span>
+							</div>
+							<div class="form-group">
+								<input type="text" placeholder="Название акции">
+							</div>
+							<div class="form-group">
+								<textarea placeholder="Описание акции"></textarea>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-blue">Сохранить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- END CONTENT  -->
 //= template/footer.html
