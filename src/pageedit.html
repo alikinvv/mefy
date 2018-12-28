@@ -46,7 +46,7 @@
 		<div class="col-12 col-sm-4 item-wrap aside">
 			<div class="item">
 				<div class="img"><img src="img/icon/coffee.svg" alt="Alt"></div>
-				<button data-toggle="modal" data-target="#req" class="button">Редактировать профиль</button>
+				<button class="button">Редактировать профиль</button>
 				<div class="info-one">
 					<div class="a">
 						<img src="img/icon/page/pen.svg" class="edit-menu" alt="">
@@ -72,7 +72,7 @@
 						</div>
 					</div>
 					<div class="a">
-						<img src="img/icon/page/pen.svg" class="edit-menu" alt="">
+						<img src="img/icon/page/pen.svg" data-toggle="modal" data-target="#time" class="edit-menu" alt="">
 						<div class="wrap"><img src="img/icon/page/time.svg" class="left" alt="Alt"></div>
 						Сегодня <div class="link">
 							<span>с 9:00 до 18:00</span>
@@ -88,7 +88,7 @@
 						</div>
 					</div>
 					<div class="a">
-						<img src="img/icon/page/pen.svg" class="edit-menu" alt="">
+						<img data-toggle="modal" data-target="#view" src="img/icon/page/pen.svg" class="edit-menu" alt="">
 						<div class="wrap"><img src="img/icon/page/dost.svg" class="left" alt="Alt"></div>
 						<div class="link">
 							<span>Способы доставки</span>
@@ -113,7 +113,7 @@
 						<a href="#">coandfe.ru</a>
 					</div>
 					<div class="a">
-						<img src="img/icon/page/pen.svg" class="edit-menu" alt="">
+						<img data-toggle="modal" data-target="#req" src="img/icon/page/pen.svg" class="edit-menu" alt="">
 						<div class="wrap"><img src="img/icon/page/money.svg" class="left" alt="Alt"></div>
 						<div class="link">
 							<span>Реквизиты компании</span>
@@ -169,10 +169,10 @@
 
 			<div class="info">
 				<div class="fadewrap">
-					<p class="title fadestatus">О компании <span data-toggle="modal" data-target="#addproduct" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">О компании <span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
-				<p class="h2">
+				<p>
 					Главной ценностью компании являются сотрудники. Наш персонал нициативный, коммуникабельный, ответственный, результативный, постоянно совершенствует свой профессиональный и личностный уровень. Сотрудники эффективно взаимодействуют между собой, слаженно работают в команде и достигают поставленных целей вместе с компанией. Политика компании направлена на постоянное развитие. Мы совершенствуем свои выставочные залы, учетные системы, складское и производственное оборудование и предоставляемые сервисы.
 					<span class="hide">Наш персонал нициативный, коммуникабельный, ответственный, результативный, постоянно совершенствует свой профессиональный и личностный уровень.</span>
 				</p>
@@ -181,7 +181,7 @@
 
 			<div class="akcii">
 				<div class="fadewrap">
-					<p class="title fadestatus">Акции <span data-toggle="modal" data-target="#adduser" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">Акции <span data-toggle="modal" data-target="#addstock" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<div class="akcii-slider slider">
@@ -210,12 +210,12 @@
 						<span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span>
 					</div>
 				</div>
-				<button data-toggle="modal" data-target="#view" class="button-center">Показать больше</button>
+				<button class="button-center">Показать больше</button>
 			</div>
 
 			<div class="tovar">
 				<div class="fadewrap">
-					<p class="title fadestatus">Товары <span data-toggle="modal" data-target="#time" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">Товары <span data-toggle="modal" data-target="#addproduct" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<div class="filter">
@@ -394,7 +394,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="button-center" data-toggle="modal" data-target="#addstock">Показать больше</button>
+					<button class="button-center">Показать больше</button>
 				</div>
 
 
@@ -743,7 +743,7 @@
 
 			<div class="sotrudniki">
 				<div class="fadewrap">
-					<p class="title fadestatus">Сотрудники <span class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
+					<p class="title fadestatus">Сотрудники <span data-toggle="modal" data-target="#adduser" class="pen"><img src="img/icon/page/pen.svg" class="svg"></span></p>
 					<div class="status">Редактировать</div>
 				</div>
 				<div class="sotrudniki-slider slider-all slider">
@@ -867,7 +867,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button style="left: -27px" class="buttonn">Смотреть</button>
+									<button style="left: -14px;top: 3px;" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -902,7 +902,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button style="left: -27px" class="buttonn">Смотреть</button>
+									<button style="left: -14px;top: 3px;" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -937,7 +937,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button style="left: -27px" class="buttonn">Смотреть</button>
+									<button style="left: -14px;top: 3px;" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -972,7 +972,7 @@
 						<div class="bottom bot">
 							<div class="right">
 								<div class="right-block border">
-									<button style="left: -27px" class="buttonn">Смотреть</button>
+									<button style="left: -14px;top: 3px;" class="buttonn">Смотреть</button>
 								</div>
 								<div class="right-block reg">
 									<div class="item"><img src="img/icon/page/pen.svg" class="svg" alt="Alt"></div>
@@ -1353,7 +1353,7 @@
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<h2>Добавить виды доставки</h2>
+				<h2>Реквизиты компании</h2>
 			</div>
 			<div class="modal-body">
 				<div class="wrap">
