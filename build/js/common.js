@@ -282,4 +282,8 @@ $(function() {
 	$('body').on('click', '.info-one .link.active', function () {
 		$('.info-one .link').removeClass('active');
 	});	
+
+	$('body').on('click', '.mnu-item', function () {
+		$(this).find('.user-menu').toggleClass('active')
+	});	
 });

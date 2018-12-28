@@ -2069,3 +2069,42 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 
 #header
   background-size: cover
+
+nav .mnu-item
+  position: relative
+
+  .user-menu
+    position: absolute
+    display: none
+    background: #fff
+    padding: 0 0
+    right: 0
+    bottom: 20px
+    transform: translateY(100%)
+    padding: 5px 19px
+    border-radius: 10px
+    box-shadow: 0 0 27px rgba(50,73,104,.19)
+
+    &.active
+      display: block
+      z-index: -1
+
+    li
+      border-bottom: 1px solid #d0dcdf
+      padding-right: 10px
+
+      &:last-child
+        border-bottom: 0
+
+      a
+        font-size: 14px
+        color: #435358
+        transition: all .2s ease-in-out
+        display: inline-block
+        padding: 5px 0
+
+        &:hover
+          color: #0176ff
+
+nav
+  z-index: 9999
