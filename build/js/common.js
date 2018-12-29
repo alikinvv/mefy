@@ -286,4 +286,8 @@ $(function() {
 	$('body').on('click', '.mnu-item', function () {
 		$(this).find('.user-menu').toggleClass('active')
 	});	
+
+	$('body').on('click', '.open-checklist', function () {
+		$('.checklist').addClass('open');
+	});	
 });

@@ -373,6 +373,14 @@ nav
   &__item 
     width: initial
 
+    &.show
+      .filter__btn
+        background: #0281f8
+        color: #fff
+
+        &::after
+          color: #fff
+
     .filter__dropdown
       padding: 14px 0 7px
       border-radius: 7px
@@ -441,6 +449,9 @@ nav
     &:hover
       background: #0281f8
       color: #fff
+
+      &::after
+        color: #fff
 
   &__bottom
     display: flex
@@ -1252,10 +1263,10 @@ nav
       &::before
         content: ''
         position: absolute
-        top: 0
+        top: -15px
         left: 0
         width: 98px
-        height: 100%
+        bottom: -15px
         border-radius: 0 50% 50% 0
         background: #009ffd
         background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
@@ -1280,22 +1291,68 @@ nav
   box-shadow: 0 0 61px rgba(50, 73, 104, 0.19)
   text-align: center
   border-radius: 7px
+  border-top-left-radius: 0
   z-index: 5
+  transform: translateX(100%)
+  transition: all .4s ease-in-out
+
+  &.open 
+    transform: translateY(0)
+
+    .open-checklist
+      opacity: 0
 
   &.active
     border-top-left-radius: 0
 
     .content
-      height: 663px
+      height: 710px
 
     .close
       transform: translateX(-100%)
       opacity: 1
 
-  .close
+  .open-checklist
     position: absolute
     left: 0
     top: 0
+    width: 60px
+    height: 60px
+    border-top-left-radius: 50%
+    border-bottom-left-radius: 50%
+    cursor: pointer
+    transition: all .2s ease-in-out
+    transform: translateX(-100%)
+    background: #e9f1fc
+    border-top: 1px solid #0176fe
+    border-left: 1px solid #0176fe
+    border-bottom: 1px solid #0176fe
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all .2s ease-in-out
+
+    &::before
+      content: ''
+      position: absolute
+      width: 40px
+      height: 40px
+      top: 50%
+      transform: translateY(-50%)
+      left: 10px
+      border-radius: 50%
+      background: #fff
+
+    img
+      width: 25px
+      position: relative
+      top: -1px
+      left: 1px
+
+  .close
+    position: absolute
+    left: 0
+    top: 7px
     transform: 0
     background: url('../img/icon/minus.svg') no-repeat center #0177ff
     width: 50px
@@ -2108,3 +2165,36 @@ nav .mnu-item
 
 nav
   z-index: 9999
+
+.filter__item form input[type="text"]
+  height: 36px
+
+.filter__item form svg.icon
+  cursor: pointer
+
+#category .item a
+  color: #435358
+
+  &:hover
+    color: #0176ff
+
+nav .mnu-item a
+  color: #435358
+
+  &:hover
+    color: #0176ff
+
+#category .catbut p
+  left: -14px
+
+.filter__nav a
+  color: #435358
+
+  &:hover
+    color: #0176ff
+
+.filter__nav a::before
+  bottom: -10px
+
+#artikles .data
+  padding: 2px 12px
