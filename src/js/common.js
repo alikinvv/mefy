@@ -288,6 +288,6 @@ $(function() {
 	});	
 
 	$('body').on('click', '.open-checklist', function () {
-		$('.checklist').addClass('open');
+		$('.checklist').toggleClass('open');
 	});	
 });
