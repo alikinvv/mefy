@@ -1263,15 +1263,17 @@ nav
       &::before
         content: ''
         position: absolute
-        top: -15px
+        top: 0
         left: 0
         width: 98px
-        bottom: -15px
+        bottom: 0
         border-radius: 0 50% 50% 0
         background: #009ffd
         background: linear-gradient(to right, #009ffd 0%, #0377f7 100%)
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009ffd', endColorstr='#0377f7',GradientType=1 )
         transition: all .6s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
 
       .svg-wrap
         background-color: transparent
@@ -1297,13 +1299,13 @@ nav
   transition: all .4s ease-in-out
 
   &.open 
-    transform: translateY(0)
-
-    .open-checklist
-      opacity: 0
+    transform: translateY(0)    
 
   &.active
     border-top-left-radius: 0
+
+    .open-checklist
+      opacity: 0
 
     .content
       height: 710px
@@ -2198,6 +2200,3 @@ nav .mnu-item a
 
 #artikles .data
   padding: 2px 12px
-
-#category .catbut .item
-  overflow: hidden
